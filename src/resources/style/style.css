@@ -1,0 +1,43 @@
+#mFile > .label {
+    -fx-graphic: url("../images/file.png");
+}
+
+#mHelp > .label {
+    -fx-graphic: url("../images/help.png");
+}
+
+#mOpen > .label {
+    -fx-graphic: url("../images/open.png");
+}
+
+#mSaveAs > .label {
+    -fx-graphic: url("../images/save.png");
+}
+
+#mExit > .label {
+    -fx-graphic: url("../images/exit.png");
+}
+
+#mAboutUs > .label {
+    -fx-graphic: url("../images/about.png");
+}
+
+#bCalculate {
+    -fx-graphic: url("../images/calculate.png");
+}
+
+#mEdit > .label {
+    -fx-graphic: url("../images/edit.png");
+}
+
+#mClearAll > .label {
+    -fx-graphic: url("../images/clear.png");
+}
+
+#mClearConsole > .label {
+    -fx-graphic: url("../images/clear.png");
+}
+
+#mClearTextFields > .label {
+    -fx-graphic: url("../images/clear.png");
+}

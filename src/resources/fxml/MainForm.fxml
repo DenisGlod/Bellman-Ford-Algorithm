@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="100.0" minWidth="350.0" prefHeight="428.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.denisglod.abf.controller.Controller">
+    <SplitPane dividerPositions="0.5187165775401069" layoutX="130.0" layoutY="179.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="358.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="50.0" minWidth="50.0" prefHeight="100.0" prefWidth="160.0">
+            <MenuBar stylesheets="@../style/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <Menu id="mFile" mnemonicParsing="false" text="Файл">
+                    <MenuItem id="mOpen" mnemonicParsing="false" onAction="#mOpenAction" text="Открыть" />
+                    <MenuItem id="mSaveAs" mnemonicParsing="false" onAction="#mSaveAsAction" text="Сохранить" />
+                    <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem id="mExit" mnemonicParsing="false" onAction="#mExitAction" text="Выход" />
+                </Menu>
+            <Menu id="mEdit" mnemonicParsing="false" text="Правка">
+              <items>
+                <MenuItem id="mClearAll" mnemonicParsing="false" onAction="#mClearAll" text="Очистить все" />
+                  <MenuItem id="mClearConsole" mnemonicParsing="false" onAction="#mClearConsole" text="Очистить консоль" />
+                  <MenuItem id="mClearTextFields" mnemonicParsing="false" onAction="#mClearTextFields" text="Очистить поля ввода" />
+              </items>
+            </Menu>
+                <Menu id="mHelp" mnemonicParsing="false" text="О программе">
+                    <MenuItem id="mAboutUs" mnemonicParsing="false" onAction="#mAboutAction" text="Информация" />
+                </Menu>
+            </MenuBar>
+            <TextArea fx:id="taConsole" editable="false" minHeight="148.0" minWidth="600.0" prefHeight="148.0" prefWidth="600.0" promptText="Консоль" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+        </AnchorPane>
+        <AnchorPane maxHeight="169.0" minHeight="169.0" minWidth="350.0" prefHeight="169.0" prefWidth="350.0">
+              <Button id="bCalculate" layoutX="117.0" layoutY="125.0" maxWidth="123.0" minWidth="123.0" mnemonicParsing="false" onAction="#onActionCalculate" prefHeight="32.0" prefWidth="123.0" stylesheets="@../style/style.css" text="Посчитать" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="125.0" />
+              <TextField fx:id="tfNumberOfVertices" layoutX="127.0" layoutY="15.0" prefHeight="25.0" prefWidth="143.0" promptText="Введите число, пр.: 4" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="15.0" />
+              <Label alignment="CENTER_RIGHT" layoutY="19.0" prefHeight="17.0" prefWidth="114.0" text="Число вершин:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="19.0" />
+              <Label alignment="CENTER_RIGHT" layoutY="93.0" prefHeight="17.0" prefWidth="114.0" text="Вес ребер:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="93.0" />
+              <TextField fx:id="tfVertexNames" layoutX="127.0" layoutY="51.0" prefHeight="25.0" prefWidth="143.0" promptText="пр.: a b c d e ..." AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="51.0" />
+              <Label alignment="CENTER_RIGHT" layoutY="55.0" prefHeight="17.0" prefWidth="114.0" text="Название вершин:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="55.0" />
+              <TextField fx:id="tfWeightOfEdges" layoutX="127.0" layoutY="89.0" prefHeight="25.0" prefWidth="143.0" promptText="пр..: a,b=1 b,c=2 ..." AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="89.0" />
+        </AnchorPane>
+    </SplitPane>
+</AnchorPane>

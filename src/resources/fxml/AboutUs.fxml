@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.121">
+    <ImageView fitHeight="112.0" fitWidth="147.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="231.0" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="14.0">
+        <Image url="@../images/logo.png" />
+        <effect>
+            <Blend />
+        </effect>
+    </ImageView>
+    <TitledPane alignment="CENTER" animated="false" collapsible="false" contentDisplay="CENTER" layoutX="7.0" layoutY="132.0" prefHeight="190.0" prefWidth="218.0" text="Алгоритм Белмана-Форда" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+        <font>
+            <Font size="13.0" />
+        </font>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="137.0" prefWidth="216.0" style="-fx-background-color: white;">
+            <Label layoutX="33.4" layoutY="3.0" prefHeight="152.0" prefWidth="198.0" text="Алгоритм Беллмана - Форда — алгоритм поиска кратчайшего пути во взвешенном графе. За время O(|V| × |E|) алгоритм находит кратчайшие пути от одной вершины графа до всех остальных." textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="2.0" />
+        </AnchorPane>
+    </TitledPane>
+    <Label alignment="CENTER" layoutX="20.0" layoutY="331.0" text="Разработчик: Денис Глод © 2017" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="331.0" />
+</AnchorPane>
