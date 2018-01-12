@@ -153,7 +153,7 @@ public class Controller {
         }
         taConsole.appendText("**** Ответ: кратчайший путь до всех точек ****\r\n");
         taConsole.appendText(stepByStepResult.toString());
-        taConsole.appendText("\r\n");
+        taConsole.appendText("\r\n////////////////////////////////////////\r\n");
     }
 
 
