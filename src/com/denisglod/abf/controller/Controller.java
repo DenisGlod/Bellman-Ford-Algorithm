@@ -60,7 +60,7 @@ public class Controller {
 
         File file = fileChooser.showOpenDialog(Main.getPrimaryStage());
         if (file != null) {
-            SaveContent saveContent = FileBFA.OpenFile(file);
+            SaveContent saveContent = FileBFA.openFile(file);
             taConsole.setText(saveContent.getConsole());
             tfWeightOfEdges.setText(saveContent.getWeightOfEdges());
             tfVertexNames.setText(saveContent.getVertexNames());
@@ -81,7 +81,7 @@ public class Controller {
 
         File file = fileChooser.showSaveDialog(Main.getPrimaryStage());
         if (file != null) {
-            FileBFA.SaveFile(saveContent, file);
+            FileBFA.saveFile(saveContent, file);
         }
     }
 

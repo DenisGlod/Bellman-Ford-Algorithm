@@ -7,7 +7,7 @@ import java.io.*;
 
 public class FileBFA {
 
-    public static void SaveFile(SaveContent content, File file) {
+    public static void saveFile(SaveContent content, File file) {
         try (ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream(file))) {
             stream.writeObject(content);
         } catch (IOException ex) {
@@ -15,7 +15,7 @@ public class FileBFA {
         }
     }
 
-    public static SaveContent OpenFile(File file) {
+    public static SaveContent openFile(File file) {
         SaveContent result = new SaveContent();
         try (ObjectInputStream stream = new ObjectInputStream(new FileInputStream(file))) {
             result = (SaveContent) stream.readObject();
