@@ -1,6 +1,6 @@
-package com.abf.util;
+package com.bfa.util;
 
-import com.abf.bean.SaveContent;
+import com.bfa.bean.SaveContent;
 import javafx.scene.control.Alert;
 
 import java.io.*;

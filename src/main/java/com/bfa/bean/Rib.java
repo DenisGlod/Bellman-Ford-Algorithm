@@ -1,4 +1,4 @@
-package com.abf.bean;
+package com.bfa.bean;
 
 public class Rib {
     private String pointStart;

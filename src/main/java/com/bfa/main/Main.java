@@ -1,6 +1,6 @@
-package com.abf.main;
+package com.bfa.main;
 
-import com.abf.util.ParametersBFA;
+import com.bfa.util.ParametersBFA;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

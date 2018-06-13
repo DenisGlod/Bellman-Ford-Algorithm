@@ -1,4 +1,4 @@
-package com.abf.util;
+package com.bfa.util;
 
 import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
@@ -12,7 +12,7 @@ public class AlertBFA {
         alert.setHeaderText(headerText);
         alert.setContentText(contentText);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-        stage.getIcons().add(new Image("/resources/images/logo.png"));
+        stage.getIcons().add(new Image("/images/logo.png"));
         alert.getDialogPane().setPrefWidth(250);
         alert.show();
     }

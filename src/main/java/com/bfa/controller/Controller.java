@@ -1,11 +1,11 @@
-package com.abf.controller;
+package com.bfa.controller;
 
-import com.abf.bean.SaveContent;
-import com.abf.main.Main;
-import com.abf.util.AlertBFA;
-import com.abf.util.ParametersBFA;
-import com.abf.bean.Rib;
-import com.abf.util.FileBFA;
+import com.bfa.bean.SaveContent;
+import com.bfa.main.Main;
+import com.bfa.util.AlertBFA;
+import com.bfa.util.ParametersBFA;
+import com.bfa.bean.Rib;
+import com.bfa.util.FileBFA;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -128,33 +128,39 @@ public class Controller {
             weight.add(rib);
         }
         Map<String, Integer> stepByStepResult = new LinkedHashMap<>();
-        for (String pointStart : vertexNames) {
-            stepByStepResult.put(pointStart, Integer.MAX_VALUE);
+        Map<String, String> shortestWay = new LinkedHashMap<>();
+        for (String point : vertexNames) {
+            stepByStepResult.put(point, Integer.MAX_VALUE);
+            shortestWay.put(point, point);
         }
         stepByStepResult.replace(vertexNames[0], 0);
 
-        int length = vertexNames.length - 1;
+        int length = Integer.parseInt(tfNumberOfVertices.getText()) - 1;
         while (length > 0) {
             taConsole.appendText("----- Итерация ");
             taConsole.appendText(String.valueOf(vertexNames.length - length));
             taConsole.appendText("-----\r\n");
-            for (String pointStart : vertexNames) {
-                weight.forEach(rib -> {
-                    if (rib.getPointStart().equals(pointStart) && stepByStepResult.get(pointStart) != Integer.MAX_VALUE) {
-                        int sumPointEnd = stepByStepResult.get(pointStart) + rib.getWeight();
-                        if (stepByStepResult.get(rib.getPointEnd()) > sumPointEnd) {
-                            stepByStepResult.replace(rib.getPointEnd(), sumPointEnd);
+            for (String point : vertexNames) {
+                for (Rib rib : weight) {
+                    if (rib.getPointStart().equals(point) && stepByStepResult.get(point) != Integer.MAX_VALUE) {
+                        int sum = stepByStepResult.get(point) + rib.getWeight();
+                        if (stepByStepResult.get(rib.getPointEnd()) > sum) {
+                            stepByStepResult.replace(rib.getPointEnd(), sum);
+                            shortestWay.replace(rib.getPointEnd(), shortestWay.get(point) + "->" + rib.getPointEnd());
                         }
                     }
-                });
+                }
             }
             taConsole.appendText(stepByStepResult.toString() + "\r\n");
             length--;
         }
         taConsole.appendText("**** Ответ: кратчайший путь до всех точек ****\r\n");
         taConsole.appendText(stepByStepResult.toString());
+        taConsole.appendText("\r\n");
+        String pointNameEnd = vertexNames[vertexNames.length - 1];
+        String pointNameStart = vertexNames[0];
+        taConsole.appendText("Кратчайший путь из точки {" + pointNameStart + "} до точки {" + pointNameEnd + "} = " + shortestWay.get(pointNameEnd));
         taConsole.appendText("\r\n////////////////////////////////////////\r\n");
     }
-
 
 }

@@ -1,4 +1,4 @@
-package com.abf.bean;
+package com.bfa.bean;
 
 import java.io.Serializable;
 
