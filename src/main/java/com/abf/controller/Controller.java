@@ -1,11 +1,11 @@
-package com.denisglod.abf.controller;
+package com.abf.controller;
 
-import com.denisglod.abf.bean.Rib;
-import com.denisglod.abf.bean.SaveContent;
-import com.denisglod.abf.main.Main;
-import com.denisglod.abf.util.AlertBFA;
-import com.denisglod.abf.util.FileBFA;
-import com.denisglod.abf.util.ParametersBFA;
+import com.abf.bean.SaveContent;
+import com.abf.main.Main;
+import com.abf.util.AlertBFA;
+import com.abf.util.ParametersBFA;
+import com.abf.bean.Rib;
+import com.abf.util.FileBFA;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

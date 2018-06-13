@@ -1,4 +1,4 @@
-package com.denisglod.abf.bean;
+package com.abf.bean;
 
 import java.io.Serializable;
 

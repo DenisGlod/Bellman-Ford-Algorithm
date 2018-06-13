@@ -1,6 +1,4 @@
-package com.denisglod.abf.util;
-
-import org.jetbrains.annotations.Contract;
+package com.abf.util;
 
 public enum ParametersBFA {
     SPACE(" "),
@@ -17,7 +15,6 @@ public enum ParametersBFA {
         this.paramName = paramName;
     }
 
-    @Contract(pure = true)
     public String getParamName() {
         return paramName;
     }

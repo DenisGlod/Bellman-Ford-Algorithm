@@ -1,6 +1,6 @@
-package com.denisglod.abf.util;
+package com.abf.util;
 
-import com.denisglod.abf.bean.SaveContent;
+import com.abf.bean.SaveContent;
 import javafx.scene.control.Alert;
 
 import java.io.*;

@@ -1,4 +1,4 @@
-package com.denisglod.abf.util;
+package com.abf.util;
 
 import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
