@@ -11,7 +11,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="100.0" minWidth="350.0" prefHeight="428.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bfa.controller.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="100.0" minWidth="350.0" prefHeight="428.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.denisglod.bfa.controller.Controller">
     <SplitPane dividerPositions="0.5187165775401069" layoutX="130.0" layoutY="179.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="358.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <AnchorPane minHeight="50.0" minWidth="50.0" prefHeight="100.0" prefWidth="160.0">
             <MenuBar stylesheets="@../style/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -21,13 +21,11 @@
                     <SeparatorMenuItem mnemonicParsing="false" />
                     <MenuItem id="mExit" mnemonicParsing="false" onAction="#mExitAction" text="Выход" />
                 </Menu>
-            <Menu id="mEdit" mnemonicParsing="false" text="Правка">
-              <items>
-                <MenuItem id="mClearAll" mnemonicParsing="false" onAction="#mClearAll" text="Очистить все" />
-                  <MenuItem id="mClearConsole" mnemonicParsing="false" onAction="#mClearConsole" text="Очистить консоль" />
-                  <MenuItem id="mClearTextFields" mnemonicParsing="false" onAction="#mClearTextFields" text="Очистить поля ввода" />
-              </items>
-            </Menu>
+                <Menu id="mEdit" mnemonicParsing="false" text="Правка">
+                    <MenuItem id="mClearAll" mnemonicParsing="false" onAction="#mClearAll" text="Очистить все"/>
+                    <MenuItem id="mClearConsole" mnemonicParsing="false" onAction="#mClearConsole" text="Очистить консоль"/>
+                    <MenuItem id="mClearTextFields" mnemonicParsing="false" onAction="#mClearTextFields" text="Очистить поля ввода"/>
+                </Menu>
                 <Menu id="mHelp" mnemonicParsing="false" text="О программе">
                     <MenuItem id="mAboutUs" mnemonicParsing="false" onAction="#mAboutAction" text="Информация" />
                 </Menu>

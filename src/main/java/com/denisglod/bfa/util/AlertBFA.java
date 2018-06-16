@@ -1,4 +1,4 @@
-package com.bfa.util;
+package com.denisglod.bfa.util;
 
 import javafx.scene.control.Alert;
 import javafx.scene.image.Image;

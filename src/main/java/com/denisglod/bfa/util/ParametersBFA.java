@@ -1,4 +1,4 @@
-package com.bfa.util;
+package com.denisglod.bfa.util;
 
 public enum ParametersBFA {
     SPACE(" "),

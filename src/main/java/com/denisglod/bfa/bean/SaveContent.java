@@ -1,4 +1,4 @@
-package com.bfa.bean;
+package com.denisglod.bfa.bean;
 
 import java.io.Serializable;
 

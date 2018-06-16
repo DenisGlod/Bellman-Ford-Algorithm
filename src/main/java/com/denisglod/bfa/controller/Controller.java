@@ -1,11 +1,11 @@
-package com.bfa.controller;
+package com.denisglod.bfa.controller;
 
-import com.bfa.bean.SaveContent;
-import com.bfa.main.Main;
-import com.bfa.util.AlertBFA;
-import com.bfa.util.ParametersBFA;
-import com.bfa.bean.Rib;
-import com.bfa.util.FileBFA;
+import com.denisglod.bfa.bean.SaveContent;
+import com.denisglod.bfa.main.Main;
+import com.denisglod.bfa.util.AlertBFA;
+import com.denisglod.bfa.util.ParametersBFA;
+import com.denisglod.bfa.bean.Rib;
+import com.denisglod.bfa.util.FileBFA;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

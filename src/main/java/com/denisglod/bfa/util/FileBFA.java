@@ -1,6 +1,6 @@
-package com.bfa.util;
+package com.denisglod.bfa.util;
 
-import com.bfa.bean.SaveContent;
+import com.denisglod.bfa.bean.SaveContent;
 import javafx.scene.control.Alert;
 
 import java.io.*;

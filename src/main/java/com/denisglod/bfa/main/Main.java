@@ -1,6 +1,6 @@
-package com.bfa.main;
+package com.denisglod.bfa.main;
 
-import com.bfa.util.ParametersBFA;
+import com.denisglod.bfa.util.ParametersBFA;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
